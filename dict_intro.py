@@ -11,6 +11,8 @@ vehicles = {
 
 # If the key doesnt exist, .get will return NONE, whereas indexing will crash the program
 # the get method is useful when your not sure if the key exists or not
+
+# accessing key value pairs
 my_car = vehicles['fiesta']
 print(my_car)
 
@@ -19,8 +21,15 @@ print(learner)\
 
 print()
 
+# adding items to a dictionary
+vehicles["onewheel"] = "Plus XR"
+vehicles["learjet"] = "Bombardier Learjet 75"
+vehicles["toy"] = "Paper plane glider"
+
+# iterating a dictionary
 for key, value in vehicles.items():
     print(key, value, sep=": ")
+
 
 
 
