@@ -9,20 +9,22 @@ vehicles = {
     'fiesta': 'Ford Fiesta Ghia 1.4',
 }
 
+# If the key doesnt exist, .get will return NONE, whereas indexing will crash the program
+# the get method is useful when your not sure if the key exists or not
 my_car = vehicles['fiesta']
 print(my_car)
 
-commuter = vehicles['virago']
-print(commuter)
-
 learner = vehicles.get("er5")
-print(learner)
+print(learner)\
 
-bike = vehicles.get("can-am")
-print(bike)
+print()
+
+for key, value in vehicles.items():
+    print(key, value, sep=": ")
 
 
-# If the key doesnt exist, .get will return NONE, whereas indexing will crash the program
-# the get method is useful when your not sure if the key exists or not
+
+
+
 
 
