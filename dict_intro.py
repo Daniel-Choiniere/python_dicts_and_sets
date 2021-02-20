@@ -29,6 +29,12 @@ vehicles["toy"] = "Paper plane glider"
 # changing values in a dictionary
 vehicles["virago"] = "Yamaha XV535"
 
+# removing items from a dictionary
+del vehicles["toy"]
+vehicles.pop("er5")
+# pass none as the default so program will not crash if key is not in dictionary
+vehicles.pop("f1", None)
+
 # iterating a dictionary
 for key, value in vehicles.items():
     print(key, value, sep=": ")
